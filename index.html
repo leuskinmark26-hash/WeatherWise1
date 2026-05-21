@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+<h2>Info</h2>
+
+<div class="extra-info">
+    <div class="info-card">
+        <p>💧 Вологість</p>
+        <h3 id="humidity"></h3>
+    </div>
+
+    <div class="info-card">
+        <p>🌬 Вітер</p>
+        <h3 id="wind-speed"></h3>
+    </div>
+
+    <div class="info-card">
+        <p>🌡 Тиск</p>
+       <h3 id="pressure"></h3>
+    </div>
+</div>
+
+<div class="extra-info">
+    <div class="info-card">
+        <p>Схід сонця</p>
+        <h3 id="sunrise"></h3>
+    </div>
+
+    <div class="info-card">
+        <p>Захід сонця</p>
+        <h3 id="sunset"></h3>
+    </div>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="topbar">
+
+    <div class="city" id="current-city">Оберіть місто</div>
+
+    <div class="search">
+        <input id="search-input" type="text" placeholder="Введи місто">
+        <button onclick="sendRequest()">Пошук</button>
+    </div>
+
+</div>
+
+<div class="weather-main">
+
+<div class="weather-widget">
+
+    <div id="main-temp" class="temp"></div>
+
+    <p id="feels-like"></p>
+
+    <div class="details">
+        <div class="row">
+            <span class="label">H</span>
+            <span class="value">29°</span>
+        </div>
+
+        <div class="row">
+            <span class="label">L</span>
+            <span class="value">12°</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="recent">
+
+    <div class="header">
+        <span>Поруч міста</span>
+    </div>
+
+    <div class="cards">
+
+        <div class="weather-card">
+            <div class="top">
+                <img src="" alt="">
+                <h2 id="nearby-temp"></h2>
+            </div>
+
+            <h3 id="nearby-city"></h3>
+            <p id="nearby-description"></p>
+        </div>
+
+        <div class="weather-card">
+            <div class="top">
+                <img src="" alt="">
+                <h2 id="nearby-temp2"></h2>
+            </div>
+
+            <h3 id="nearby-city2"></h3>
+            <p id="nearby-description2"></p>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div id="forecast" class="forecast"></div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>WeatherWise</h3>
+        <p>Сучасний погодний застосунок</p>
+
+        <div class="footer-links">
+            <a href="#">Головна</a>
+            <a href="#">Погода</a>
+            <a href="#">Про нас</a>
+        </div>
+
+        <p class="copy">© 2026 WeatherWise. Всі права захищені.</p>
+    </div>
+</footer>
+
+<script src="./js.js"></script>
+
+</body>
+</html>
