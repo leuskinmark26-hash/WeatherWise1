@@ -138,7 +138,7 @@ async function fiveDaysForecast(city) {
 function changeBackgroundImage(main) {
 
     if (main == "Clouds") {
-        body.style.backgroundImage = `url("clouds.Webp")`
+        body.style.backgroundImage = `url("clouds.webp")`
     }
     else if (main == "Rain") {
         body.style.backgroundImage = `url("rain.png")`
